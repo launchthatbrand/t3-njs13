@@ -8,7 +8,7 @@ import { api } from "~/utils/api";
 
 import { ConnectWallet, useAddress, useAuth } from "@thirdweb-dev/react";
 import { getDoc, doc, serverTimestamp, setDoc } from "firebase/firestore";
-import { signInWithCustomToken } from "firebase/auth";
+import { signInWithCustomToken, signOut } from "firebase/auth";
 import initializeFirebaseClient from "../lib/initFirebase";
 import useFirebaseUser from "../lib/useFirebaseUser";
 import useFirebaseDocument from "../lib/useFirebaseUserDocument";
